@@ -17,7 +17,7 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
-let selectedAnswers = {};  // Store selected answers
+let selectedAnswers = {}; 
 
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
@@ -39,7 +39,7 @@ function loadQuestion() {
         btn.innerText = option;
         btn.onclick = () => checkAnswer(btn, option, q.answer);
         
-        // Apply previously selected answer styling
+        
         if (selectedAnswers[currentQuestionIndex] !== undefined) {
             btn.classList.add(selectedAnswers[currentQuestionIndex] === q.answer ? "correct" : "wrong");
             btn.disabled = true;
@@ -48,7 +48,7 @@ function loadQuestion() {
         optionsEl.appendChild(btn);
     });
 
-    // Update button states
+    
     prevBtn.disabled = currentQuestionIndex === 0;
     nextBtn.innerText = currentQuestionIndex === questions.length - 1 ? "Finish" : "Next";
 }
@@ -56,7 +56,7 @@ function loadQuestion() {
 function checkAnswer(button, selected, correct) {
     selectedAnswers[currentQuestionIndex] = selected;
 
-    // Disable all buttons after selection
+    
     Array.from(optionsEl.children).forEach(btn => {
         btn.classList.remove("correct", "wrong");
         btn.disabled = true;
@@ -85,9 +85,9 @@ function showResults() {
     questionEl.innerText = "Quiz Completed!";
     const score = calculateScore();
     const totalQuestions = questions.length;
-    const percentage = Math.round((score / totalQuestions) * 100); // Calculate percentage score
+    const percentage = Math.round((score / totalQuestions) * 100); 
 
-    // Display score breakdown
+   
     optionsEl.innerHTML = `
         <div class="score">
             Your Score: ${score}/${totalQuestions} (${percentage}%) 
@@ -97,12 +97,12 @@ function showResults() {
         </div>
     `;
 
-    // Add trophy image for celebration
+   
     const trophy = document.createElement("img");
-    trophy.src = "trophy.jpg";  // Path to the local image file (ensure the file is in the same folder)
+    trophy.src = "trophy.jpg";  
     trophy.classList.add("trophy");
 
-    optionsEl.appendChild(trophy);  // Append the trophy image
+    optionsEl.appendChild(trophy); 
 
     prevBtn.style.display = "none";
     nextBtn.style.display = "none";
