@@ -1,43 +1,43 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #1a1a1a; /* Faint black background */
-    background-image: url('quiz.jpg'); /* Set the background image */
-    background-size: cover; /* Ensures the image covers the screen */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-color: #1a1a1a; 
+    background-image: url('quiz.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure the body takes up the full height */
+    height: 100vh; 
 }
 
 .quiz-container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     width: 450px;
-    backdrop-filter: blur(10px); /* Blur the background slightly */
-    border: 3px solid #9b59b6; /* Neon violet border */
+    backdrop-filter: blur(10px);
+    border: 3px solid #9b59b6;
 }
 
 h1 {
     text-align: center;
     font-size: 28px;
-    color: #00ffcc; /* Neon color for header */
+    color: #00ffcc;
     margin-bottom: 20px;
 }
 
 .quiz-box {
-    background: rgba(0, 0, 0, 0.8); /* Darker box to match the overall theme */
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    border: 3px solid #9b59b6; /* Neon violet border for the quiz box */
+    border: 3px solid #9b59b6;
 }
 
 h2 {
@@ -52,7 +52,7 @@ button {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    background: #3498db; /* Default blue */
+    background: #3498db;
     color: white;
     transition: 0.3s;
     border-radius: 10px;
@@ -63,14 +63,13 @@ button:hover {
 }
 
 button.correct {
-    background: #27ae60; /* Neon green for correct answers */
-}
+    background: #27ae60; 
 
 button.wrong {
-    background: #e74c3c; /* Neon red for wrong answers */
+    background: #e74c3c;
 }
 
-/* Navigation buttons styling */
+
 .nav-buttons {
     display: flex;
     justify-content: space-between;
@@ -101,7 +100,7 @@ button.wrong {
 .score {
     font-size: 22px;
     font-weight: bold;
-    color: #f39c12; /* Neon yellow for score */
+    color: #f39c12;
     margin-top: 20px;
 }
 
