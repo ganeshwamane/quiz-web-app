@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a; /* Faint black background */
+    background-image: url('quiz.jpg'); /* Set the background image */
+    background-size: cover; /* Ensures the image covers the screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full height */
+}
+
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    width: 450px;
+    backdrop-filter: blur(10px); /* Blur the background slightly */
+    border: 3px solid #9b59b6; /* Neon violet border */
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #00ffcc; /* Neon color for header */
+    margin-bottom: 20px;
+}
+
+.quiz-box {
+    background: rgba(0, 0, 0, 0.8); /* Darker box to match the overall theme */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 3px solid #9b59b6; /* Neon violet border for the quiz box */
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: #3498db; /* Default blue */
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+button.correct {
+    background: #27ae60; /* Neon green for correct answers */
+}
+
+button.wrong {
+    background: #e74c3c; /* Neon red for wrong answers */
+}
+
+/* Navigation buttons styling */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nav-buttons button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    background: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.nav-buttons button:hover {
+    background: #777;
+}
+
+#prevBtn:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+.score {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f39c12; /* Neon yellow for score */
+    margin-top: 20px;
+}
+
+.score-breakdown {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.trophy {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
